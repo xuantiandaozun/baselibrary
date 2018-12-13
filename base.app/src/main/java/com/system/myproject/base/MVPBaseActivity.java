@@ -27,14 +27,14 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator;
  * 创建时间：2018/4/2
  */
 
-public abstract class MVPBaseActivity <V, P extends MVPBasePresenter<V>> extends SupportActivity {
+public abstract class MVPBaseActivity <V, P extends MVPBasePresenter<V>> extends TMBaseActivity {
     protected P mPresenter;
     public String mtoken;
     public String mUser;
     public String mUserId;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         init(savedInstanceState);
         setTheme(getThemeResId());
