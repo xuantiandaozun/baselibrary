@@ -7,12 +7,12 @@ def libs = rootProject.ext.libraries//库
 android {
     signingConfigs {
     }
-    compileSdkVersion cfg.compileSdkVersion
+    compileSdkVersion 28
     defaultConfig {
-        minSdkVersion cfg.minSdkVersion
-        targetSdkVersion cfg.targetSdk
-        versionCode cfg.versionCode
-        versionName cfg.versionName
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
